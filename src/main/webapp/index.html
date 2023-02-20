@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <title>Öffentliche Bibliothek | Klaus-Weiler-Fraxern</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Unsere Bibliothek ist mit einem Medienbestand von 14779 Büchern, 1472 Filmen, 789 Hörbüchern und 59 Zeitschriften
+            ein Ort für Jung und Alt.<br>Da die Bibliothek ein wesentlicher Teil der VMS Klaus-Weiler-Fraxern ist, richtet sich der Großteil unserer Sammelschwepunkte
+            nach Interessen<br>der SchülerInnen - von langweiligen Sachbüchern, über fesselnde Fantasy-Bücher bis hin zu spannenden Filmen - gibt es alles zu finden!">
+    <meta name="keywords" content="Schindlers Liste, Nemo, Das Parfum, Gregs">
+    <script defer src ="assignment5/website.js"></script>
+
+    <script>document.cookie = "last_page=" +window.location.href + ";path=/" </script>
+
+    <link rel="stylesheet" type="text/css" href="assignment5/website.css"/>
+    <link rel="stylesheet" type="text/css" href="assignment5/printview.css" media="print"/>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+    <div class="navbar">
+        <h1 class= "head-line">
+            ÖFFENTLICHE BIBLIOTHEK <br><span class="head-line2">KLAUS-WEILER-FRAXERN</span>
+        </h1>
+    </div>
+
+    <div class="box">
+        <span class="suche-headline"><img class="suche" src="assignment5/suche.png">&nbsp;&nbsp;Suche</span>
+        <form name="search">
+
+            <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+        </form>
+        <i class="fas fa-search"></i>
+    </div>
+
+
+    <nav>
+        <ul>
+
+            <li><a href="mailto: klaus@bibliothek.at"> <img class="mail-link" src="assignment5/mail.png">&nbsp;&nbsp;E-Mail</a></li>
+
+            <li><a href="index.html"> <img class="bibicon" src="assignment5/buch.png">Startseite</a></li>
+            <li><a href="#"> <img class="media" src="assignment5/media.png">&nbsp;&nbsp;Unsere Medien</a>
+                <ul>
+                    <li><a href="LoginController?dispatchto=Buecher"> Bücher & Zeitschriften</a></li>
+                    <li><a href="LoginController?dispatchto=CDDVD"> CDs & DVDs </a></li>
+                    <li><a href="#"> Hörbücher</a></li>
+                    <li><a href="#"> Spiele</a></li>
+                </ul>
+            </li>
+            <li><a href="LoginController?dispatchto=Team"> <img class="team" src="assignment5/team.png">&nbsp;&nbsp;Team</a></li>
+            <li><a href="#"> <img class="media" src="assignment5/konto.png">&nbsp;&nbsp;Konto</a>
+                <ul>
+                    <li><a href="registrieren.html">Registrieren</a></li>
+                    <li><a href="#">Anmelden</a></li>
+                </ul>
+            </li>
+            <li><a href="LoginController?dispatchto=Gaestebuch"> <img class ="guestbook" src="assignment5/comment.png">Gästebuch</a></li>
+        </ul>
+    </nav>
+
+
+    <div class="image-container">
+        <img class= "header-image" src="assignment5/buecher.jpg" id="buecher">
+
+        <div class="description">
+            <h1 class="gruss">WILLKOMMEN IN DER BIBLIOTHEK KLAUS-WEILER-FRAXERN!</h1><br>
+            <span class="gruss-text">Unsere Bibliothek ist mit einem Medienbestand von 14779 Büchern, 1472 Filmen, 789 Hörbüchern und 59 Zeitschriften
+            ein Ort für Jung und Alt.<br>Da die Bibliothek ein wesentlicher Teil der VMS Klaus-Weiler-Fraxern ist, richtet sich der Großteil unserer Sammelschwepunkte
+            nach Interessen<br>der SchülerInnen - von langweiligen Sachbüchern, über fesselnde Fantasy-Bücher bis hin zu spannenden Filmen - gibt es alles zu finden!</span>
+        </div><br><br><br>
+
+        <div class="time-container">
+            <h2 class="head-line-hours">Öffnungszeiten:</h2>
+                <span class="hours">Mo-Fr: 17:00 - 19:30 </span><br>
+                <span class="hours">So: 09:00-11:30</span><br><br>
+                <span class="holidays">An Feiertagen geschlossen!</span><br>
+                <span class="hours">08.12.2022: Maria Empfängnis </span><br>
+                <span class="hours">25.12.2022: Weihnachten </span><br>
+                <span class="hours">26.12.2022: Stefanitag </span><br>
+                <span class="hours">01.01.2023: Neujahr </span><br>
+                <span class="hours">06.01.2023: Heilige Drei Könige </span><br><br>
+            <div class="media-container">
+                <h2 class="head-line-media">Unsere Medien</h2>
+                <li class="list"><a href="buecher.html"> Bücher & Zeitschriften</a></li>
+                <li class="list"><a href="cddvd.html"> CDs & DVDs </a></li>
+                <li class="list"><a>Hörbücher</a></li>
+                <li class="list"><a>Spiele</a></li>
+
+            </div>
+        </div><br><br>
+
+
+        <div class="lending">
+            <h2 class="costsNlending">Gebühren und Ausleihdauer:</h2>
+            <div>
+                <h3 class="costs">Gebühren:</h3>
+                <span class="cost-text"> SchülerInnen bekommen eine kostenlose Bib-Card, die bis zum 15. Lebensjahr kostenlos bleibt.<br>
+                Allerdings muss bei Verlust eine Bearbeitungsgebühr von 10€ bezahlt werden.<br><br>
+                Erwachsene müssen jährlich 10€ für die Bib-Card zahlen.<br><br>
+                Es können ausschließlich Bib-Mitglieder unsere Medien ausleihen!<br><br>
+                Bei verspäteter Rückgabe werden 0,50€ pro Tag und pro Medium verrechnet.</span><br><br>
+
+                <h3 class="lending-time">Ausleihdauer:</h3>
+                <span class="lenting-time-text">Die Ausleihdauer für Bücher beträgt 4 Wochen. Verlängerung möglich.<br>
+                Die Ausleihdauer für CDs, DVDs und Zeitschrifte beträgt 2 Wochen.</span>
+
+            </div>
+
+        </div><br><br>
+
+        <div>
+            <h2 class="address">Kontakt:</h2>
+            <div class="address-text">
+                Treietstraße 17b | Mittelschule Klaus-Weiler-Fraxern<br>6833 Klaus<br>Austria<br>
+                Tel: +43(0) 5524 12345<br> Mail: klaus@bibliothek.at
+            </div><br>
+
+        </div>
+
+        <div class="maps-container">
+            <iframe class="maps-frame"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2705.4682557402516!2d9.642437615620087!3d47.30519007916577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479b3ee385a0ac3f%3A0xa078720780462ca5!2sB%C3%BCcherei%20Klaus%20Weiler!5e0!3m2!1sde!2sat!4v1668357897771!5m2!1sde!2sat" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="text-container">
+                <h2 class="arrival">Anreise:</h2> <br>
+                <span class="train">Sofern Sie mit dem Zug nach Klaus reisen, wird empfohlen am
+                Bahnhof in Klaus auszusteigen und anschließen entweder zu Fuß oder mit dem Bus weiter zu fahren.</span><br>
+                Gehzeit über die Treietstraße beträgt ca. 18 Minuten.
+                <br><br>
+                <span class="bus">Sollten Sie mit dem Bus weiterfahren, müssen Sie den 59er Richtung Feldkirch nehmen und Klaus Postamt aussteigen. Von dort aus
+                müssen Sie über die Treietstraße Richtung Westen laufen. Fahrt dauert 7 Miunten und die Gehzeit ca. 6 Minuten.</span>
+            </div>
+        </div>
+
+    </div>
+    <footer class="legal-content">
+        <span>(c) 2022 - HOE GmbH | <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc">Impressum</a> | <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc">Datenschutz</a></span>
+    </footer>
+
+</body>
+</html>

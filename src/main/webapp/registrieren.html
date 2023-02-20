@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Öffentliche Bibliothek | Klaus-Weiler-Fraxern</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Unsere Bibliothek ist mit einem Medienbestand von 14779 Büchern, 1472 Filmen, 789 Hörbüchern und 59 Zeitschriften
+            ein Ort für Jung und Alt.<br>Da die Bibliothek ein wesentlicher Teil der VMS Klaus-Weiler-Fraxern ist, richtet sich der Großteil unserer Sammelschwepunkte
+            nach Interessen<br>der SchülerInnen - von langweiligen Sachbüchern, über fesselnde Fantasy-Bücher bis hin zu spannenden Filmen - gibt es alles zu finden!">
+    <meta name="keywords" content="Schindlers Liste, Nemo, Das Parfum, Gregs">
+    <script>document.cookie = "last_page=" +window.location.href + ";path=/" </script>
+    <link rel="stylesheet" type="text/css" href="assignment5/website.css"/>
+    <link rel="stylesheet" type="text/css" href="assignment5/printview.css" media="print"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div class="navbar">
+    <h1 class= "head-line">
+        ÖFFENTLICHE BIBLIOTHEK;<br> <span class="head-line2">KLAUS-WEILER-FRAXERN</span>
+    </h1>
+</div>
+
+<div class="box">
+    <span class="suche-headline"><img class="suche" src="assignment5/suche.png">&nbsp;&nbsp;Suche</span>
+    <form name="search">
+        <input type="text" class="input" name="txt" onmouseout="this.value = ''; this.blur();">
+    </form>
+    <i class="fas fa-search"></i>
+</div>
+
+<nav>
+    <ul>
+        <li><a href="mailto: klaus@bibliothek.at"> <img class="mail-link" src="assignment5/mail.png">&nbsp;&nbsp;E-Mail</a></li>
+        <li><a href="index.html"> <img class="bibicon" src="assignment5/buch.png">Startseite</a></li>
+        <li><a href="#"> <img class="media" src="assignment5/media.png">&nbsp;&nbsp;Unsere Medien</a>
+            <ul>
+                <li><a href="LoginController?dispatchto=Buecher"> Bücher & Zeitschriften</a></li>
+                <li><a href="LoginController?dispatchto=CDDVD"> CDs & DVDs </a></li>
+                <li><a href="#"> Hörbücher</a></li>
+                <li><a href="#"> Spiele</a></li>
+            </ul>
+        </li>
+        <li><a href="LoginController?dispatchto=Team"> <img class="team" src="assignment5/team.png">&nbsp;&nbsp;Team</a></li>
+        <li><a href="#"> <img class="media" src="assignment5/konto.png">&nbsp;&nbsp;Konto</a>
+            <ul>
+                <li><a href="LoginController?dispatchto=Registrieren">Registrieren</a></li>
+                <li><a href="#">Anmelden</a></li>
+            </ul>
+        </li>
+        <li><a href="LoginController?dispatchto=Gaestebuch"> <img class ="guestbook" src="assignment5/comment.png">Gästebuch</a></li>
+    </ul>
+</nav>
+</div>
+
+<div class ="name-site">
+    <span class="name-item">Mein Konto</span>
+    <span class="location"> Hier kannst du ganz schnell und einfach ein Konto erstellen!</span>
+</div>
+
+<div class="container">
+    <form id="form"   action="LoginController" name="Anfrage" method=post>
+        <input type="hidden" value="register" name="validationType">
+        <h1>Registrieren</h1>
+
+        <div class="input-control">
+            <label for="firstname">Vorname:</label>
+            <input id="firstname" name="firstname" type="text">
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label for="lastname">Nachname:</label>
+            <input id="lastname" name="lastname" type="text">
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label for="address">Adresse:</label>
+            <textarea class="address-textarea" id="address" name="address" type="text" rows="10"></textarea>
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label for="country">Land:</label>
+            <select name="country" id="country">
+                <option value="Österreich">Österreich</option>
+                <option value="Deutschland">Deutschland</option>
+                <option value="Schweiz">Schweiz</option>
+                <option value="Liechtenstein">Liechtenstein</option>
+                <option value="Andere">Andere</option>
+            </select>
+            <div class="error"></div>
+        </div><br>
+
+        <div class="input-control">
+            <label>Geschlecht:</label>
+            <table class="input-table" style="margin: 10px">
+                <tr class="input-table">
+                    <td class="input-table">
+                        <input type="radio" checked name="gender" id="male"/>
+                    </td>
+                    <td class="input-table">
+                        <label for="male">männlich</label>
+                    </td>
+                </tr>
+                <tr class="input-table">
+                    <td class="input-table">
+                        <input type="radio" name="gender" id="female"/>
+                    </td>
+                    <td class="input-table">
+                        <label for="female">weiblich</label>
+                    </td>
+                </tr>
+                <tr class="input-table">
+                    <td class="input-table">
+                        <input type="radio"  name="gender" id="diverse"/>
+                    </td>
+                    <td class="input-table">
+                        <label for="diverse">divers</label>
+                    </td>
+                </tr>
+            </table>
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label for="username">Benutzername:</label>
+            <input id="username" name="username" type="text">
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label for="password">Passwort:</label>
+            <input id="password"name="password" type="password">
+            <div class="error"></div>
+        </div>
+        <div class="input-control">
+            <label for="password2">Passwort bestätigen:</label>
+            <input id="password2"name="password2" type="password">
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label for="email">E-Mail:</label>
+            <input id="email" name="email" type="text">
+            <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+            <label>
+                Meine Interessen:
+            </label>
+            <select id="multiple-select" multiple>
+                <option value="1">Bücher und Zeitschriften</option>
+                <option value="2">CDs und DVDs</option>
+                <option value="3">Hörbücher</option>
+                <option value="4">Spiele</option>
+            </select>
+            <div class="error"></div>
+        </div><br>
+
+
+        <div class="input-control">
+            <label>Kontoart:</label>
+            <table class="input-table" style="margin: 10px">
+                <tr class="input-table">
+                    <td class="input-table">
+                        <input type="checkbox"  name="role" id="besucherIn"/>
+                    </td>
+                    <td class="input-table">
+                        <label for="besucherIn">BesucherIn</label>
+                    </td>
+                </tr>
+                <tr class="input-table">
+                    <td class="input-table">
+                        <input type="checkbox" name="role" id="admin"/>
+                    </td>
+                    <td class="input-table">
+                        <label for="admin">Admin</label>
+                    </td>
+                </tr>
+                <tr class="input-table">
+                    <td class="input-table">
+                        <input type="checkbox" name="role" id="mitarbeiterIn"/>
+                    </td>
+                    <td class="input-table">
+                        <label for="mitarbeiterIn">MitarbeiterIn</label>
+                    </td>
+                </tr>
+            </table>
+            <div class="error"></div>
+        </div><br>
+
+        <button type="submit">Registrieren </button>
+        <button type="reset">Eingaben löschen</button>
+        <br><br>
+        <span>Du hast bereits ein Konto?</span><a href="anmelden.html">Anmelden</a>
+    </form>
+</div>
+
+
+
+<footer class="legal-content">
+    <span>(c) 2022 - HOE GmbH | <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc">Impressum</a> | <a href="https://www.youtube.com/watch?v=xm3YgoEiEDc">Datenschutz</a></span>
+</footer>
+
+</body>
+</html>
